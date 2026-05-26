@@ -1,0 +1,11 @@
+package com.hmail.api.client;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@FeignClient("pay-service")
+public interface PayClient {
+    @PutMapping("/users/money/deduct")
+    public void deductMoney(@RequestParam("pw") String pw, @RequestParam("amount") Integer amount);
+}
