@@ -75,3 +75,5 @@ Desktop.ini
 /hm-service/src/main/resources/application-local.yaml
 /userService/src/main/resources/application-dev.yaml
 /userService/src/main/resources/application-local.yaml
+/trade-service/src/main/resources/application-dev.yaml
+/trade-service/src/main/resources/application-local.yaml
